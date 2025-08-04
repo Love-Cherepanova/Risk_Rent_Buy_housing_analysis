@@ -23,7 +23,24 @@ We combine and normalize these features to identify:
 - Perform regression analysis to explore relationships between risk, rent, and purchase
 - Export results to CSV
 
----
+## API Deployment
+This project icnludes a deployed REST API built with FastAPI.
+
+### 🌐 Try it live:
+[https://https://risk-rent-buy-housing-analysis.onrender.com/docs](https://risk-rent-buy-housing-analysis.onrender.com/docs)
+
+### Endpoint: "/predict"
+
+**Method:** "POST"
+**Request body:**
+"""json
+{"price": 300000,
+ "rent": 1500,
+ "risk": 2
+}
+
+
+ ---
 
 ## 📁 Project Files
 
@@ -49,9 +66,9 @@ We combine and normalize these features to identify:
 
 ## 📈 Visualizations
 
-- ✅ Top counties for rent and buy shown on a **Folium map**
-- ✅ Custom indices visualized with **barplots**
-- ✅ Relationships between variables shown using **linear regression models**
+-  Top counties for rent and buy shown on a **Folium map**
+-  Custom indices visualized with **barplots**
+-  Relationships between variables shown using **linear regression models**
 
 ---
 
