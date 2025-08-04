@@ -8,7 +8,7 @@ class InputData(BaseModel):
   rent: float
   risk: float
 
-@app.post("/predict')
+@app.post("/predict")
 def predict(data: InputData):
   score = data.price / (data.rent + 1) - data.risk
   return {"score": score}
